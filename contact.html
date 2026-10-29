@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Contact Lesotho Tourism </title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <h1>Contact Lesotho Tourism </h1>
+                <p>We are happy to help you plan your visit </p>
+            </header>
+            <nav>
+                <a href="Lesotho-Tourism.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <section>
+                <h2>Contact Us.</h2>
+                <p>Complete the form below to contact us.</p>
+                <form onsubmit="return checkPassword(event)">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <br><br>
+                    <label for="email"Email:>Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br><br>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Choose gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+
+                    <label for="destination>"Choose a destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="Maletsunyane falls">Maletsunyane Falls</option>
+                        <option value="Thaba Bosiu">Thaba Bosiu</option>
+                        <option value="Katse Dam">Katse Dam</option>
+                    </select>
+                    <br><br>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br><br>
+                     <label for="password">Password:</label>
+                     <input type="password" id="password" name="password" required>
+                     <label for="confirmPassword">ConfirmPassword:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <br><br>
+                     <button type="submit">Submit</button>
+                    <button type="reset">Clear Form</button>
+                    <br><br>
+                    </form>
+            </section>
+            <footer>
+                <p>Copyright 2026 Lesotho Tourism</p>
+            </footer>
+            <script src="script.js"></script>
+            <script>
+                function checkPassword(){
+                    let password = document. getElementById("password").value;
+                    let confirmPassword = document.getElementById("confirmpassword").value;
+                    if (password !== confirmPassword){
+                        alert(passwords do not msptch. please l)
+                    }
+                    alert("your form has been checked successfully!")
+                    return true;}
+            </script>
+        </body>
+    </html>
